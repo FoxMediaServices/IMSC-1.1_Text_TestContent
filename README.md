@@ -29,6 +29,7 @@ The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IM
 The IMSC 1.1 XML file includes in-line comments which describes the purpose of each test.
 
 The backplate includes the following:
+- Frame counter and Media Time counter
 - Grid with lines every 5%
 - Yellow crosses at each corner of the region
 - Sync counter at the beginning and end of each event
