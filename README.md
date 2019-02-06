@@ -9,7 +9,7 @@ This test content includes the following assets:
 - IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec2020-PQ_Backplate.mov*
 - IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec2020-PQ_CompositedProxy.mp4*
 
-**Please note that these media files are hosted at https://foxgroup.box.com/, and are linked to via .URL  internet shortcut files.*
+    **Please note that these media files are hosted at https://foxgroup.box.com/, and are linked to via .URL  internet shortcut files.*
 
 The IMSC XML file is to be rendered over the Backplate ProRes HQ file. If the IMSC decoding is accurate, it will look approximately the same as the Composited Proxy file. It is acceptable for there to be slight differences in text rendering, since the proportionalSansSerif font chosen by the renderer may be different than what was used for the proxy. There is both a Rec 709 backplate and proxy, along with a Rec 2020 PQ backplate and proxy. The recommended approach for compositing sRGB subtitles to rec 709 and rec 2020 PQ is:
 
