@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tt xml:lang="en" xmlns="http://www.w3.org/ns/ttml" ttp:contentProfiles="http://www.w3.org/ns/ttml/profile/imsc1.1/text" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" ttp:timeBase="media" ttp:frameRate="24" ttp:frameRateMultiplier="1000 1001" ttp:tickRate="1000" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:ittp="http://www.w3.org/ns/ttml/profile/imsc1#parameter" xmlns:ittm="http://www.w3.org/ns/ttml/profile/imsc1#metadata" ittp:aspectRatio="16 9">
+	<head>
+		<metadata>
+			<ttm:desc>IMSC 1.1 Test Reel | v3-1_2019-04-11 | Created by Dave Kneeland and Brian Holter | Fox Media Services
+			Changelog:
+			v3.1	Removed ttp:profile="http://www.w3.org/ns/ttml/profile/imsc1/text" and added ttp:contentProfiles="http://www.w3.org/ns/ttml/profile/imsc1.1/text" to the header.
+			v3.0	Major re-working of the items that are tested. This version has added an emphasis on foreign character rendering, and proper color compositing.
+					Added in-line comments to describe the intent of each test.
+			v2.1	Fixed "Time Expression Test Event #3" begin time from 00:04:09:06 to 00:04:09:05 so that it pops on at frame number 5976 as intended 
+					Reduced length of Style and Region ID's, and added spaces when needed to line up XML attributes
+					Added ttp:profile="http://www.w3.org/ns/ttml/profile/imsc1/text"
+					Removed smpte:information element
+			v2.0	Added Italics in a span examples
+					Added off-white text with a textOutline example
+			v1.0	Initial release</ttm:desc>
+		</metadata>
+		<styling>
+			<style xml:id="default"       tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+			<style xml:id="lineH125"      tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal" tts:lineHeight="125%"/>
+			<style xml:id="lineH125_mono" tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="monospaceSerif"        tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal" tts:lineHeight="125%"/>
+			<style xml:id="lineH150"      tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal" tts:lineHeight="150%"/>
+			<style xml:id="fontSize50"    tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="50%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+			<style xml:id="fontSize100"   tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="100%" tts:fontWeight="normal" tts:fontStyle="normal"/>
+			<style xml:id="fontSize150"   tts:color="white" tts:backgroundColor="transparent" tts:fontFamily="proportionalSansSerif" tts:fontSize="150%" tts:fontWeight="normal" tts:fontStyle="normal"/>
+			<style xml:id="BlkBkgd"       tts:color="white" tts:backgroundColor="black"       tts:fontFamily="proportionalSansSerif" tts:fontSize="80%"  tts:fontWeight="normal" tts:fontStyle="normal"/>
+		</styling>
+		<layout>
+			<region xml:id="black_80"        tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="center"/>
+			<region xml:id="color_UL"        tts:backgroundColor="#464646"     tts:showBackground="whenActive" tts:origin="5% 15%"    tts:extent="45% 35%"  tts:textAlign="center" tts:displayAlign="center"/>
+			<region xml:id="black_1Line"     tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="10% 46.9%" tts:extent="80% 6.2%" tts:textAlign="center" tts:displayAlign="before"/>
+			<region xml:id="black_narrow"    tts:backgroundColor="black"       tts:showBackground="whenActive" tts:origin="25% 10%"   tts:extent="50% 80%"  tts:textAlign="center" tts:displayAlign="center"/>
+			<region xml:id="trans_RB"        tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="end"    tts:displayAlign="before"/>
+			<region xml:id="trans_LA"        tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="start"  tts:displayAlign="after"/>
+			<region xml:id="trans_80_A"      tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="after"/>
+			<region xml:id="trans_80_A_rl"   tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="after" tts:writingMode="rl"/>
+			<region xml:id="trans_80_A_tb"   tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="after" tts:writingMode="tb"/>
+			<region xml:id="trans_80_A_tblr" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="after" tts:writingMode="tblr"/>
+			<region xml:id="trans_80_B"      tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="before"/>
+			<region xml:id="trans_80_B_rl"   tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="before" tts:writingMode="rl"/>
+			<region xml:id="trans_80_B_tb"   tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="before" tts:writingMode="tb"/>
+			<region xml:id="trans_80_B_tblr" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="before" tts:writingMode="tblr"/>
+			<region xml:id="trans_80"        tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="center"/>
+			<region xml:id="trans_80_G1"     tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="center" tts:luminanceGain="1.0"/>
+			<region xml:id="trans_80_G5"     tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:origin="10% 10%"   tts:extent="80% 80%"  tts:textAlign="center" tts:displayAlign="center" tts:luminanceGain="5.0"/>
+		</layout>
+	</head>
+	<body>
+		<div>
+			<!--These first events are evaluating proper rendering of regions boundaries-->
+			<p begin="216f" end="264f" style="default" region="black_80">10% in from each side</p>
+			<p begin="288f" end="336f" style="default" region="color_UL">Upper left quadrant<br/>Dark gray region color</p>
+			<p begin="360f" end="408f" style="default" region="black_1Line">Region is 1 line, text is 3 lines<br/>This line should not be visible<br/>This line should also not be visible</p>
+			<p begin="432f" end="480f" style="default" region="black_narrow">Text wrapping<br/>This 2nd line should wrap around to a 3rd line</p>
+
+			<!--These are evaluating itts:fillLineGap, which is intended to fill in the blank tts:backgroundColor between lines of text.
+			These are also evaluating tts:backgroundColor="black" via a span, which will only produce a black background behind the text.-->
+			<p begin="504f" end="552f" style="lineH150" region="trans_RB"><span tts:backgroundColor="black">Black background defined via span<br/>Without fillLineGap</span></p>
+			<p begin="576f" end="624f" style="lineH150" region="trans_RB" itts:fillLineGap="true"><span tts:backgroundColor="black">Black background defined via span<br/>With fillLineGap</span></p>
+
+			<!--These are evaluating that a decoder can properly italicize an entire line of text, or a single word in a line of text.
+			It also has tts:backgroundColor="black" in the style, which will produce a black background that extends horizontally to the entire regionfor each line of text-->
+			<p begin="648f" end="696f" style="BlkBkgd" region="trans_LA">Proportional font with a <span tts:fontStyle="italic">word</span> italicized<br/><span tts:fontStyle="italic">Entire line italicized</span></p>
+			<p begin="720f" end="768f" style="BlkBkgd" region="trans_LA"><span tts:fontFamily="monospaceSerif">Monospace font with a <span tts:fontStyle="italic">word</span> italicized<br/><span tts:fontStyle="italic">Entire line italicized</span></span></p>
+
+			<!--ebutts:multiRowAlign-->
+			<p begin="792f" end="840f" style="default" region="trans_80_B" ebutts:multiRowAlign="start">MultiRowAlign:<br/>Start</p>
+			<p begin="864f" end="912f" style="default" region="trans_80_B" ebutts:multiRowAlign="end">MultiRowAlign:<br/>End</p>
+
+			<!--textOutline and textShadow-->
+			<p begin="936f" end="984f" style="default" region="trans_80_B"><span tts:textOutline="black 4%">textOutline: 4%</span><br/><br/><span tts:textShadow="10% -20% 20% red">textShadow: Red, upper right, blurred</span><br/><span tts:textShadow="20% 10% 10% lime">textShadow: Green, lower right, slightly blurred</span><br/><span tts:textShadow="10% 10% 0% black">textShadow: Black, lower right, no blur</span></p>
+
+			<!--Testing different font sizes.
+			The first event has tts:fontSize="80%" defined in the style. Each tts:fontSize in a span is relative to the style size of 80%.
+			The second event is actually 4 simultaneous events. Since each of these events are presented in the same region (trans_80_B), the lines of text will stack on top of each other as 4 lines of text (as opposed to all appearing on a single line)		-->
+			<p begin="1008f" end="1056f" style="default"     region="trans_80_B">The below fontSizes are relative to 80%:<br/><span tts:fontSize="50%">fontSize=50%</span><br/><span tts:fontSize="100%">fontSize=100%</span><br/><span tts:fontSize="150%">fontSize=150%</span></p>
+			<p begin="1080f" end="1128f" style="default"     region="trans_80_B">The below fontSizes are absolute (simultaneous events):</p>
+			<p begin="1080f" end="1128f" style="fontSize50"  region="trans_80_B">fontSize=50%</p>
+			<p begin="1080f" end="1128f" style="fontSize100" region="trans_80_B">fontSize=100%</p>
+			<p begin="1080f" end="1128f" style="fontSize150" region="trans_80_B">fontSize=150%</p>
+
+			<!--Escape characters. The two lines of characters should appear identical-->
+			<p begin="00:00:52.052" end="00:00:54.054" style="lineH125_mono" region="trans_80_B">Escape characters:<br/>"“”„'‘’‚»«()[].,;:|?¿!¡&lt;&gt;&amp;<br/>&#34;&#8220;&#8221;&#8222;&#39;&#8216;&#8217;&#8218;&#187;&#171;&#40;&#41;&#91;&#93;&#46;&#44;&#59;&#58;&#124;&#63;&#191;&#33;&#161;&#60;&#62;&#38;</p>
+
+			<!--These events test non-western characters and western characters within the same event. It is critical that the decoder choose an appropriate font as needed for each language.
+			The second event tests right to left languages, and combines those with English text.		-->
+			<p begin="00:00:55.055" end="00:00:57.057" style="lineH125" region="trans_80_B" ebutts:multiRowAlign="start">Left to Right languages and multiRowAlign start:<br/>
+				Chinese: <span   xml:lang="zh">“示例IMSC1.1，文本。”</span><br/>				<!--The fonts used in the proxy are: Meiryo & Arial-->
+				Hindi: <span     xml:lang="hi">"उदाहरण IMSC1.1, पाठ।"</span><br/>				<!--The fonts used in the proxy are: Nirmala UI & Arial-->
+				Korean: <span    xml:lang="ko">"예제 IMSC1.1, 텍스트"</span><br/>				<!--The fonts used in the proxy are: Malgun Gothic & Arial-->
+				Malayalam: <span xml:lang="ml">"IMSC1.1 ഉദാഹരണം ഉദാഹരണം."</span><br/>		<!--The fonts used in the proxy are: Kartika & Arial-->
+				Punjabi: <span   xml:lang="pa">"ਉਦਾਹਰਣ IMSC1.1, ਪਾਠ."</span><br/>				<!--The fonts used in the proxy are: Raavi & Arial-->
+				Tamil: <span     xml:lang="ta">"உதாரணம் IMSC1.1, உரை."</span><br/>			<!--The fonts used in the proxy are: Latha & Arial-->
+				Telugu: <span    xml:lang="te">"ఉదాహరణ IMSC1.1, టెక్స్ట్."</span><br/>				<!--The fonts used in the proxy are: Gautami & Arial-->
+				Thai: <span      xml:lang="th">"ตัวอย่าง IMSC1.1 ข้อความ"</span><br/>			<!--The fonts used in the proxy are: Tahoma & Arial-->
+				Japanese (no quotes): <span xml:lang="jp">例IMSC1.1、テキスト。</span></p>		<!--The fonts used in the proxy are: Meiryo & Arial-->
+			<p begin="00:00:58.058" end="00:00:60.060" style="lineH125" region="trans_80_B_rl" ebutts:multiRowAlign="start"><span tts:unicodeBidi="bidiOverride" tts:direction="ltr">Right to Left languages and multiRowAlign start:</span><br/>
+				Arabic: <span    xml:lang="ar">"مثال IMSC1.1 ، النص."</span><br/>			<!--The font used in the proxy is: Arial-->
+				Farsi: <span     xml:lang="fa">"مثال IMSC1.1، متن"</span><br/>				<!--The font used in the proxy is: Arial-->
+				Hebrew: <span    xml:lang="he">"דוגמה IMSC1.1, טקסט."</span><br/>			<!--The font used in the proxy is: Arial-->
+				Pushto: <span    xml:lang="ps">"د مثال په ډول IMSC1.1، متن."</span><br/>	<!--The font used in the proxy is: Arial-->
+				Urdu: <span      xml:lang="ur">"مثال کے طور پر IMSC1.1، متن."</span></p>	<!--The font used in the proxy is: Arial-->
+
+			<!--The following tests are primarily to test for Japanese content.-->
+			<p begin="1560f" end="1608f" style="default" region="trans_80_A">No Rubies, <span tts:ruby="container" tts:rubyPosition="before">
+					<span tts:ruby="base">With Rubies</span>
+					<span tts:ruby="text">Rubies above</span>
+				</span>, Without</p>
+			<p begin="1560f" end="1608f" style="default" region="trans_80_B" tts:shear="16.67%">No Rubies, <span tts:ruby="container" tts:rubyPosition="after">
+					<span tts:ruby="base">With Rubies</span>
+					<span tts:ruby="text">Rubies below</span>
+				</span>, Without</p>
+			<p begin="1632f" end="1680f" style="default" region="trans_80_A_tb">No Rubies, <span tts:ruby="container" tts:rubyPosition="before">
+					<span tts:ruby="base">With Rubies</span>
+					<span tts:ruby="text">Rubies right</span>
+				</span>, Without</p>
+			<p begin="1632f" end="1680f" style="default" region="trans_80_B_tb" tts:shear="16.67%">No Rubies, <span tts:ruby="container" tts:rubyPosition="after">
+					<span tts:ruby="base">With Rubies</span>
+					<span tts:ruby="text">Rubies left</span>
+				</span>, Without</p>
+			<p begin="1704f" end="1752f" style="default" region="trans_80_B_tblr"><span xml:lang="jp">まるで<span tts:textCombine="all">23</span>歳のままだわ</span></p>
+			<p begin="1704f" end="1752f" style="default" region="trans_80_A_tblr" tts:shear="16.67%"><span xml:lang="jp">まるで<span tts:textCombine="all">23</span>歳のままだわ</span></p>
+			<p begin="1776f" end="1824f" style="default" region="trans_80_B"><span xml:lang="jp"><span tts:textEmphasis="filled circle before">花</span>
+					<span tts:textEmphasis="filled dot before">よ</span>
+					<span tts:textEmphasis="filled sesame before">り</span>
+					<span tts:textEmphasis="open circle before">だ</span>
+					<span tts:textEmphasis="open dot before">ん</span>
+					<span tts:textEmphasis="open sesame before">ご</span><br/>
+					<span tts:textEmphasis="filled circle after">花</span>
+					<span tts:textEmphasis="filled dot after">よ</span>
+					<span tts:textEmphasis="filled sesame after">り</span>
+					<span tts:textEmphasis="open circle after">だ</span>
+					<span tts:textEmphasis="open dot after">ん</span>
+					<span tts:textEmphasis="open sesame after">ご</span></span></p>
+
+			<!--These will evaluate that the sRGB values in this IMSC file are being properly mapped to the color space of the video content.
+			tts:luminanceGain is only applicable when compositing subtitles on HDR10 content. The following two events will look identical on SDR content.-->
+			<p begin="00:01:21.081" end="00:01:23.083" style="lineH125_mono" region="trans_80_G1">Color Compositing - Gain 1<br/><br/>
+				<span tts:color="#DCDCDC">#DCDCDC Text INVISIBLE Rest of Text</span><br/><br/>
+				<span tts:color="#FF0000">#FF0000 Text INVISIBLE Rest of Text</span></p>
+			<p begin="00:01:24.084" end="00:01:26.086" style="lineH125_mono" region="trans_80_G5">Color Compositing - Gain 5<br/><br/>
+				<span tts:color="#DCDCDC">#DCDCDC Text INVISIBLE Rest of Text</span><br/><br/>
+				<span tts:color="#FF0000">#FF0000 Text INVISIBLE Rest of Text</span></p>
+
+			<!--These are to ensure that the various time expression syntaxes are properly interpreted. It's very common for certain time expression values to decode incorrectly by a factor of 1.001.-->
+			<p begin="5832f"        end="5880f"        style="default" region="trans_80">Time Expression: Frames</p>
+			<p begin="246.246s"     end="248.248s"     style="default" region="trans_80">Time Expression: Seconds</p>
+			<p begin="00:04:09.249" end="00:04:11.251" style="default" region="trans_80">Time Expression: HH:MM:SS.ms</p>
+			<p begin="00:04:12:06"  end="00:04:14:06"  style="default" region="trans_80">Time Expression: HH:MM:SS:FF</p>
+			<p begin="255255t"      end="257257t"      style="default" region="trans_80">Time Expression: Ticks</p>
+		</div>
+	</body>
+</tt>
