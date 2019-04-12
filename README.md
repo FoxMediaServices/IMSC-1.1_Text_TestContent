@@ -3,11 +3,11 @@
 This reel is a continuation of the IMSC-1.0.1_Text_TestContent assets. This reel was created with the same scope as the original reel, where the items that are tested are all pertinent to subtitles produced for production content. This version adds numerous additional tests that focus on foreign language rendering, color compositing to different color spaces, and some new IMSC 1.1 attributes. Like the original reel, this has been built to help manufacturers with their IMSC 1.1 Text implementations by providing them with a reference IMSC package.
 
 This test content includes the following assets:
-- IMSC1-1_TEXT_Test-Reel_FMS_v3-1_2019-04-11.xml
-- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec709_Backplate.mov*
-- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec709_CompositedProxy.mp4*
-- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec2020-PQ_Backplate.mov*
-- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_2019-01-29_Rec2020-PQ_CompositedProxy.mp4*
+- IMSC1-1_TEXT_Test-Reel_FMS_v3-1.xml
+- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_Rec709_Backplate.mov*
+- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_Rec709_CompositedProxy.mp4*
+- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_Rec2020-PQ_Backplate.mov*
+- IMSC1-1_TEXT_Test-Reel_FMS_v3-0_Rec2020-PQ_CompositedProxy.mp4*
 
     **Please note that these media files are hosted at https://foxgroup.box.com/, and are linked to via .URL  internet shortcut files.*
 
