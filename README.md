@@ -11,7 +11,7 @@ This test content includes the following assets:
 - IMSC1-1_TEXT_Test-Reel_FMS_v4-0_2019-11-20_Rec709_Backplate.mxf*
 - IMSC1-1_TEXT_Test-Reel_FMS_v4-0_2019-11-20_Rec709_CompositedProxy.mov*
 
-    **Please contact dave.kneeland@disney.com to receive a copy of these files*
+    **These files can be found at the w3c fork of this repo: https://github.com/w3c/IMSC-1.1_Text_TestContent*
 
 The IMSC XML file is to be rendered over the Backplate MXF file. If the IMSC decoding is accurate, it will look approximately the same as the Composited Proxy file. It is acceptable for there to be slight differences in text rendering, since the proportionalSansSerif font chosen by the renderer may be different than what was used for the proxy. There is a Rec 709 backplate and proxy, a Rec 2020 PQ backplate and proxy, and an HLG backplate and proxy. The recommended approach for compositing sRGB subtitles to rec 709, rec 2020 PQ, and HLG is:
 
